@@ -1,0 +1,325 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/network-data-catalog/platform", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/network-data-catalog/server" ],
+    "title" : {
+      "undefined" : "The Network Data Catalog Ontology – Platform"
+    },
+    "iri" : "https://w3id.org/network-data-catalog/platform#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ],
+    "description" : {
+      "undefined" : "An ontology for representing platform information of network devices"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/platform",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-05-05",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ndc-pm",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/platform#",
+        "type" : "iri"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/network-data-catalog-ontology",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Network Data Catalog Ontology – Platform",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://datatracker.ietf.org/doc/rfc8525/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/network-data-catalog/platform#OperatingSystem",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperatingSystem",
+      "undefined" : "Operating System"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#NetworkDevice",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkDevice",
+      "undefined" : "Network Device"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#Platform",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Platform",
+      "undefined" : "Platform"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#Vendor",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vendor",
+      "undefined" : "Vendor"
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/network-data-catalog/platform#platformName",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "platformName",
+      "undefined" : "platform name"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#osName",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "osName",
+      "undefined" : "os name"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#osVersion",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "osVersion",
+      "undefined" : "os version"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#vendor",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "vendor",
+      "undefined" : "vendor"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#platform",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "platform",
+      "undefined" : "platform"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/platform#operatingSystem",
+    "baseIri" : "https://w3id.org/network-data-catalog/platform",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "operatingSystem",
+      "undefined" : "operating system"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  } ]
+}

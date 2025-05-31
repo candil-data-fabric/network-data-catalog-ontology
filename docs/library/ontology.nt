@@ -1,0 +1,310 @@
+<https://w3id.org/network-data-catalog/library#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/network-data-catalog/library#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/network-data-catalog/library> .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/created> "2025-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/description> "An ontology for representing YANG Library" .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/dc/terms/title> "The Network Data Catalog Ontology – Library" .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndc-lb" .
+<https://w3id.org/network-data-catalog/library#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/network-data-catalog/library#> .
+<https://w3id.org/network-data-catalog/library#> <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/library#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://datatracker.ietf.org/doc/rfc8525/> .
+<https://w3id.org/network-data-catalog/library#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/network-data-catalog/library> .
+<https://w3id.org/network-data-catalog/library#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/network-data-catalog/library#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/network-data-catalog/library#augmentedByModule
+<https://w3id.org/network-data-catalog/library#augmentedByModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#augmentedByModule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/network-data-catalog/library#moduleDependency> .
+<https://w3id.org/network-data-catalog/library#augmentedByModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#augmentedByModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#augmentedByModule> <http://www.w3.org/2000/01/rdf-schema#label> "augmented by module" .
+# 
+# https://w3id.org/network-data-catalog/library#developedBy
+<https://w3id.org/network-data-catalog/library#developedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#developedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#developedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
+<https://w3id.org/network-data-catalog/library#developedBy> <http://www.w3.org/2000/01/rdf-schema#label> "developed by" .
+# 
+# https://w3id.org/network-data-catalog/library#deviatedByModule
+<https://w3id.org/network-data-catalog/library#deviatedByModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#deviatedByModule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/network-data-catalog/library#moduleDependency> .
+<https://w3id.org/network-data-catalog/library#deviatedByModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#deviatedByModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#deviatedByModule> <http://www.w3.org/2000/01/rdf-schema#label> "deviated by module" .
+# 
+# https://w3id.org/network-data-catalog/library#implementedModule
+<https://w3id.org/network-data-catalog/library#implementedModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#implementedModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleImplementation> .
+<https://w3id.org/network-data-catalog/library#implementedModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#implementedModule> <http://www.w3.org/2000/01/rdf-schema#label> "implemented module" .
+# 
+# https://w3id.org/network-data-catalog/library#importedModule
+<https://w3id.org/network-data-catalog/library#importedModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#importedModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleImport> .
+<https://w3id.org/network-data-catalog/library#importedModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#importedModule> <http://www.w3.org/2000/01/rdf-schema#label> "imported module" .
+# 
+# https://w3id.org/network-data-catalog/library#importsModule
+<https://w3id.org/network-data-catalog/library#importsModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#importsModule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/network-data-catalog/library#moduleDependency> .
+<https://w3id.org/network-data-catalog/library#importsModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#importsModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#importsModule> <http://www.w3.org/2000/01/rdf-schema#label> "imports module" .
+# 
+# https://w3id.org/network-data-catalog/library#includesSubmodule
+<https://w3id.org/network-data-catalog/library#includesSubmodule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#includesSubmodule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/network-data-catalog/library#moduleDependency> .
+<https://w3id.org/network-data-catalog/library#includesSubmodule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#includesSubmodule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Submodule> .
+<https://w3id.org/network-data-catalog/library#includesSubmodule> <http://www.w3.org/2000/01/rdf-schema#label> "includes submodule" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleDependency
+<https://w3id.org/network-data-catalog/library#moduleDependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#moduleDependency> <http://www.w3.org/2000/01/rdf-schema#label> "module dependency" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleImplementation
+<https://w3id.org/network-data-catalog/library#moduleImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#moduleImplementation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleSet> .
+<https://w3id.org/network-data-catalog/library#moduleImplementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#ModuleImplementation> .
+<https://w3id.org/network-data-catalog/library#moduleImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "module implementation" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleImport
+<https://w3id.org/network-data-catalog/library#moduleImport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#moduleImport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleSet> .
+<https://w3id.org/network-data-catalog/library#moduleImport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#ModuleImport> .
+<https://w3id.org/network-data-catalog/library#moduleImport> <http://www.w3.org/2000/01/rdf-schema#label> "module import" .
+# 
+# https://w3id.org/network-data-catalog/library#supportsDatastoreSchema
+<https://w3id.org/network-data-catalog/library#supportsDatastoreSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#supportsDatastoreSchema> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/server#YangDatastore> .
+<https://w3id.org/network-data-catalog/library#supportsDatastoreSchema> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#DatastoreSchema> .
+<https://w3id.org/network-data-catalog/library#supportsDatastoreSchema> <http://www.w3.org/2000/01/rdf-schema#label> "supports datastore schema" .
+# 
+# https://w3id.org/network-data-catalog/library#supportsModuleSet
+<https://w3id.org/network-data-catalog/library#supportsModuleSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#supportsModuleSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/server#YangDatastore> .
+<https://w3id.org/network-data-catalog/library#supportsModuleSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#ModuleSet> .
+<https://w3id.org/network-data-catalog/library#supportsModuleSet> <http://www.w3.org/2000/01/rdf-schema#label> "supports module set" .
+# 
+# https://w3id.org/network-data-catalog/library#usesFeature
+<https://w3id.org/network-data-catalog/library#usesFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#usesFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleImplementation> .
+<https://w3id.org/network-data-catalog/library#usesFeature> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#Feature> .
+<https://w3id.org/network-data-catalog/library#usesFeature> <http://www.w3.org/2000/01/rdf-schema#label> "uses feature" .
+# 
+# https://w3id.org/network-data-catalog/library#usesModuleSet
+<https://w3id.org/network-data-catalog/library#usesModuleSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/library#usesModuleSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#DatastoreSchema> .
+<https://w3id.org/network-data-catalog/library#usesModuleSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/library#ModuleSet> .
+<https://w3id.org/network-data-catalog/library#usesModuleSet> <http://www.w3.org/2000/01/rdf-schema#label> "uses module set" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://w3id.org/network-data-catalog/library#featureName
+<https://w3id.org/network-data-catalog/library#featureName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#featureName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Feature> .
+<https://w3id.org/network-data-catalog/library#featureName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#featureName> <http://www.w3.org/2000/01/rdf-schema#label> "feature name" .
+# 
+# https://w3id.org/network-data-catalog/library#location
+<https://w3id.org/network-data-catalog/library#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/library#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleContact
+<https://w3id.org/network-data-catalog/library#moduleContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#moduleContact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#moduleContact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#moduleContact> <http://www.w3.org/2000/01/rdf-schema#label> "module contact" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleDescription
+<https://w3id.org/network-data-catalog/library#moduleDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#moduleDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#moduleDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#moduleDescription> <http://www.w3.org/2000/01/rdf-schema#label> "module description" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleName
+<https://w3id.org/network-data-catalog/library#moduleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#moduleName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#moduleName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#moduleName> <http://www.w3.org/2000/01/rdf-schema#label> "module name" .
+# 
+# https://w3id.org/network-data-catalog/library#moduleSetId
+<https://w3id.org/network-data-catalog/library#moduleSetId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#moduleSetId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#ModuleSet> .
+<https://w3id.org/network-data-catalog/library#moduleSetId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#moduleSetId> <http://www.w3.org/2000/01/rdf-schema#label> "module set id" .
+# 
+# https://w3id.org/network-data-catalog/library#namespace
+<https://w3id.org/network-data-catalog/library#namespace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#namespace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#namespace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/library#namespace> <http://www.w3.org/2000/01/rdf-schema#label> "namespace" .
+# 
+# https://w3id.org/network-data-catalog/library#prefix
+<https://w3id.org/network-data-catalog/library#prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#prefix> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#prefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#prefix> <http://www.w3.org/2000/01/rdf-schema#label> "prefix" .
+# 
+# https://w3id.org/network-data-catalog/library#referenceDocument
+<https://w3id.org/network-data-catalog/library#referenceDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#referenceDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#referenceDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/library#referenceDocument> <http://www.w3.org/2000/01/rdf-schema#label> "reference document" .
+# 
+# https://w3id.org/network-data-catalog/library#repositoryLocation
+<https://w3id.org/network-data-catalog/library#repositoryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#repositoryLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#repositoryLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/library#repositoryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "repository location" .
+# 
+# https://w3id.org/network-data-catalog/library#revisionDate
+<https://w3id.org/network-data-catalog/library#revisionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#revisionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#revisionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/network-data-catalog/library#revisionDate> <http://www.w3.org/2000/01/rdf-schema#label> "revision date" .
+# 
+# https://w3id.org/network-data-catalog/library#schemaId
+<https://w3id.org/network-data-catalog/library#schemaId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/library#schemaId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/library#DatastoreSchema> .
+<https://w3id.org/network-data-catalog/library#schemaId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/library#schemaId> <http://www.w3.org/2000/01/rdf-schema#label> "schema id" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# https://w3id.org/network-data-catalog/library#DatastoreSchema
+<https://w3id.org/network-data-catalog/library#DatastoreSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#DatastoreSchema> <http://www.w3.org/2000/01/rdf-schema#label> "Datastore Schema" .
+# 
+# https://w3id.org/network-data-catalog/library#Feature
+<https://w3id.org/network-data-catalog/library#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# https://w3id.org/network-data-catalog/library#Module
+<https://w3id.org/network-data-catalog/library#Module> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#Module> <http://www.w3.org/2000/01/rdf-schema#label> "Module" .
+# 
+# https://w3id.org/network-data-catalog/library#ModuleImplementation
+<https://w3id.org/network-data-catalog/library#ModuleImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#ModuleImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "Module Implementation" .
+# 
+# https://w3id.org/network-data-catalog/library#ModuleImport
+<https://w3id.org/network-data-catalog/library#ModuleImport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#ModuleImport> <http://www.w3.org/2000/01/rdf-schema#label> "Module Import" .
+# 
+# https://w3id.org/network-data-catalog/library#ModuleSet
+<https://w3id.org/network-data-catalog/library#ModuleSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#ModuleSet> <http://www.w3.org/2000/01/rdf-schema#label> "Module Set" .
+# 
+# https://w3id.org/network-data-catalog/library#Submodule
+<https://w3id.org/network-data-catalog/library#Submodule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/library#Submodule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/network-data-catalog/library#Module> .
+<https://w3id.org/network-data-catalog/library#Submodule> <http://www.w3.org/2000/01/rdf-schema#label> "Submodule" .
+# 
+# https://w3id.org/network-data-catalog/server#NetconfCapability
+<https://w3id.org/network-data-catalog/server#NetconfCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/server#NetconfCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/network-data-catalog/library#Feature> .
+<https://w3id.org/network-data-catalog/server#NetconfCapability> <http://www.w3.org/2000/01/rdf-schema#label> "Netconf Capability" .
+# 
+# https://w3id.org/network-data-catalog/server#YangDatastore
+<https://w3id.org/network-data-catalog/server#YangDatastore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/server#YangDatastore> <http://www.w3.org/2000/01/rdf-schema#label> "Yang Datastore" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

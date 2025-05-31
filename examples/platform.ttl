@@ -1,0 +1,31 @@
+@prefix schema: <http://schema.org/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix core: <https://ontology.unifiedcyberontology.org/uco/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix observable: <https://ontology.unifiedcyberontology.org/uco/observable/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ndc-lb: <https://w3id.org/network-data-catalog/library#> .
+@prefix ndc-pm: <https://w3id.org/network-data-catalog/platform#> .
+@prefix ndc-sr: <https://w3id.org/network-data-catalog/server#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://example.org> .
+
+<NetworkDevice/srl> a ndc-sr:NetworkDevice;
+  ndc-pm:platform <Platform/7250_XR>;
+  ndc-pm:operatingSystem <OperatingSystem/SR_Linux/24.10> .
+
+<Platform/7250_XR> a ndc-pm:Platform;
+  ndc-pm:platformName "7250 XR";
+  ndc-pm:vendor <Organization/NOKIA> .
+
+<OperatingSystem/SR_Linux/24.10> a ndc-pm:OperatingSystem;
+  ndc-pm:osName "SR Linux";
+  ndc-pm:osVersion "24.10";
+  ndc-pm:vendor <Organization/NOKIA> .
+
+<Organization/NOKIA> a ndc-pm:Vendor;
+  schema:name "NOKIA" .

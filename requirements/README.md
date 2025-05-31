@@ -43,4 +43,5 @@ Set of requirements defined for the Network Data Catalog Ontology:
 | CQ23 | Platform  | Which is the vendor that manufactors an operating system?                                                                                                   |
 | CQ24 | Server    | What is the protocol version of the Yang Server?                                                                                                            |
 | CQ25 | Library   | What is the location where the YANG module is available?                                                                                                    |
-| CQ26 | Library   | What is the prefix of the YANG module                                                                                                                       |
+| CQ26 | Library   | What is the prefix of the YANG module?                                                                                                                       |
+| CQ27 | Library   |Which organization has developed the YANG module?                                                                                                                        |

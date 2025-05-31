@@ -1,0 +1,346 @@
+@prefix : <https://w3id.org/network-data-catalog/library#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/network-data-catalog/library#> .
+
+<https://w3id.org/network-data-catalog/library#> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://w3id.org/network-data-catalog/library> ;
+                                                  <http://purl.org/dc/terms/created> "2025-05-05"^^xsd:date ;
+                                                  <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
+                                                  <http://purl.org/dc/terms/description> "An ontology for representing YANG Library" ;
+                                                  <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                                  <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                                  <http://purl.org/dc/terms/title> "The Network Data Catalog Ontology – Library" ;
+                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndc-lb" ;
+                                                  <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/network-data-catalog/library#> ;
+                                                  <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
+                                                  rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
+                                                  owl:priorVersion <https://w3id.org/network-data-catalog/library> ;
+                                                  owl:versionInfo "1.0.0" ;
+                                                  <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/network-data-catalog/library#augmentedByModule
+:augmentedByModule rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :moduleDependency ;
+                   rdfs:domain :Module ;
+                   rdfs:range :Module ;
+                   rdfs:label "augmented by module" .
+
+
+###  https://w3id.org/network-data-catalog/library#developedBy
+:developedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Module ;
+             rdfs:range <http://schema.org/Organization> ;
+             rdfs:label "developed by" .
+
+
+###  https://w3id.org/network-data-catalog/library#deviatedByModule
+:deviatedByModule rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :moduleDependency ;
+                  rdfs:domain :Module ;
+                  rdfs:range :Module ;
+                  rdfs:label "deviated by module" .
+
+
+###  https://w3id.org/network-data-catalog/library#implementedModule
+:implementedModule rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ModuleImplementation ;
+                   rdfs:range :Module ;
+                   rdfs:label "implemented module" .
+
+
+###  https://w3id.org/network-data-catalog/library#importedModule
+:importedModule rdf:type owl:ObjectProperty ;
+                rdfs:domain :ModuleImport ;
+                rdfs:range :Module ;
+                rdfs:label "imported module" .
+
+
+###  https://w3id.org/network-data-catalog/library#importsModule
+:importsModule rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :moduleDependency ;
+               rdfs:domain :Module ;
+               rdfs:range :Module ;
+               rdfs:label "imports module" .
+
+
+###  https://w3id.org/network-data-catalog/library#includesSubmodule
+:includesSubmodule rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :moduleDependency ;
+                   rdfs:domain :Module ;
+                   rdfs:range :Submodule ;
+                   rdfs:label "includes submodule" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleDependency
+:moduleDependency rdf:type owl:ObjectProperty ;
+                  rdfs:label "module dependency" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleImplementation
+:moduleImplementation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ModuleSet ;
+                      rdfs:range :ModuleImplementation ;
+                      rdfs:label "module implementation" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleImport
+:moduleImport rdf:type owl:ObjectProperty ;
+              rdfs:domain :ModuleSet ;
+              rdfs:range :ModuleImport ;
+              rdfs:label "module import" .
+
+
+###  https://w3id.org/network-data-catalog/library#supportsDatastoreSchema
+:supportsDatastoreSchema rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://w3id.org/network-data-catalog/server#YangDatastore> ;
+                         rdfs:range :DatastoreSchema ;
+                         rdfs:label "supports datastore schema" .
+
+
+###  https://w3id.org/network-data-catalog/library#supportsModuleSet
+:supportsModuleSet rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://w3id.org/network-data-catalog/server#YangDatastore> ;
+                   rdfs:range :ModuleSet ;
+                   rdfs:label "supports module set" .
+
+
+###  https://w3id.org/network-data-catalog/library#usesFeature
+:usesFeature rdf:type owl:ObjectProperty ;
+             rdfs:domain :ModuleImplementation ;
+             rdfs:range :Feature ;
+             rdfs:label "uses feature" .
+
+
+###  https://w3id.org/network-data-catalog/library#usesModuleSet
+:usesModuleSet rdf:type owl:ObjectProperty ;
+               rdfs:domain :DatastoreSchema ;
+               rdfs:range :ModuleSet ;
+               rdfs:label "uses module set" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "name" .
+
+
+###  https://w3id.org/network-data-catalog/library#featureName
+:featureName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Feature ;
+             rdfs:range xsd:string ;
+             rdfs:label "feature name" .
+
+
+###  https://w3id.org/network-data-catalog/library#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:anyURI ;
+          rdfs:label "location" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleContact
+:moduleContact rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Module ;
+               rdfs:range xsd:string ;
+               rdfs:label "module contact" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleDescription
+:moduleDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Module ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "module description" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleName
+:moduleName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Module ;
+            rdfs:range xsd:string ;
+            rdfs:label "module name" .
+
+
+###  https://w3id.org/network-data-catalog/library#moduleSetId
+:moduleSetId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ModuleSet ;
+             rdfs:range xsd:string ;
+             rdfs:label "module set id" .
+
+
+###  https://w3id.org/network-data-catalog/library#namespace
+:namespace rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Module ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "namespace" .
+
+
+###  https://w3id.org/network-data-catalog/library#prefix
+:prefix rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Module ;
+        rdfs:range xsd:string ;
+        rdfs:label "prefix" .
+
+
+###  https://w3id.org/network-data-catalog/library#referenceDocument
+:referenceDocument rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Module ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:label "reference document" .
+
+
+###  https://w3id.org/network-data-catalog/library#repositoryLocation
+:repositoryLocation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Module ;
+                    rdfs:range xsd:anyURI ;
+                    rdfs:label "repository location" .
+
+
+###  https://w3id.org/network-data-catalog/library#revisionDate
+:revisionDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Module ;
+              rdfs:range xsd:date ;
+              rdfs:label "revision date" .
+
+
+###  https://w3id.org/network-data-catalog/library#schemaId
+:schemaId rdf:type owl:DatatypeProperty ;
+          rdfs:domain :DatastoreSchema ;
+          rdfs:range xsd:string ;
+          rdfs:label "schema id" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class ;
+                                 rdfs:label "Organization" .
+
+
+###  https://w3id.org/network-data-catalog/library#DatastoreSchema
+:DatastoreSchema rdf:type owl:Class ;
+                 rdfs:label "Datastore Schema" .
+
+
+###  https://w3id.org/network-data-catalog/library#Feature
+:Feature rdf:type owl:Class ;
+         rdfs:label "Feature" .
+
+
+###  https://w3id.org/network-data-catalog/library#Module
+:Module rdf:type owl:Class ;
+        rdfs:label "Module" .
+
+
+###  https://w3id.org/network-data-catalog/library#ModuleImplementation
+:ModuleImplementation rdf:type owl:Class ;
+                      rdfs:label "Module Implementation" .
+
+
+###  https://w3id.org/network-data-catalog/library#ModuleImport
+:ModuleImport rdf:type owl:Class ;
+              rdfs:label "Module Import" .
+
+
+###  https://w3id.org/network-data-catalog/library#ModuleSet
+:ModuleSet rdf:type owl:Class ;
+           rdfs:label "Module Set" .
+
+
+###  https://w3id.org/network-data-catalog/library#Submodule
+:Submodule rdf:type owl:Class ;
+           rdfs:subClassOf :Module ;
+           rdfs:label "Submodule" .
+
+
+###  https://w3id.org/network-data-catalog/server#NetconfCapability
+<https://w3id.org/network-data-catalog/server#NetconfCapability> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :Feature ;
+                                                                 rdfs:label "Netconf Capability" .
+
+
+###  https://w3id.org/network-data-catalog/server#YangDatastore
+<https://w3id.org/network-data-catalog/server#YangDatastore> rdf:type owl:Class ;
+                                                             rdfs:label "Yang Datastore" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
