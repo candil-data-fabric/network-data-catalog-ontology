@@ -249,4 +249,3 @@ ndc-sr:YangServer a owl:Class ;
 
 ndc-sr:NetconfCapability a owl:Class ;
     rdfs:label "Netconf Capability" .
-

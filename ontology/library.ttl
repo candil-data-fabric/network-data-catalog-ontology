@@ -1,35 +1,12 @@
-@prefix : <https://w3id.org/network-data-catalog/library#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
 @prefix ndc-lb: <https://w3id.org/network-data-catalog/library#> .
 @prefix ndc-sr: <https://w3id.org/network-data-catalog/server#> .
-@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix mod: <https://w3id.org/mod#> .
-@base <https://w3id.org/network-data-catalog/library#> .
-
-<https://w3id.org/network-data-catalog/library#> rdf:type owl:Ontology ;
-			dcterms:title "The Network Data Catalog Ontology – Library" ;
-			dcterms:created "2025-05-05"^^xsd:date ;
-			dcterms:creator "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
-			dcterms:description "An ontology for representing YANG Library" ;
-			dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
-			dcterms:publisher <https://github.com/candil-data-fabric> ;
-			owl:versionInfo "1.0.0" ;
-			owl:versionIRI <https://w3id.org/network-data-catalog/library> ;
-			owl:priorVersion <https://w3id.org/network-data-catalog/library> ;
-			rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
-			schema:codeRepository "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
-			vann:preferredNamespacePrefix "ndc-lb" ;
-			vann:preferredNamespaceUri <https://w3id.org/network-data-catalog/library#> ;
-			mod:createdWith <https://chowlk.linkeddata.es/> .
-
-dcterms:title a owl:AnnotationProperty .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dcterms:created a owl:AnnotationProperty .
 
@@ -41,274 +18,201 @@ dcterms:license a owl:AnnotationProperty .
 
 dcterms:publisher a owl:AnnotationProperty .
 
-owl:versionInfo a owl:AnnotationProperty .
-
-owl:versionIRI a owl:AnnotationProperty .
-
-owl:priorVersion a owl:AnnotationProperty .
-
-rdfs:seeAlso a owl:AnnotationProperty .
-
-schema:codeRepository a owl:AnnotationProperty .
+dcterms:title a owl:AnnotationProperty .
 
 vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
 vann:preferredNamespaceUri a owl:AnnotationProperty .
 
-#################################
-#    Object Properties
-#################################
+schema1:codeRepository a owl:AnnotationProperty .
 
-## ndc-lb:moduleImplementation
-ndc-lb:moduleImplementation rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:ModuleSet ;
-		rdfs:range ndc-lb:ModuleImplementation ;
-		rdfs:label "module implementation" .
+schema1:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string .
 
-## ndc-lb:supportsDatastoreSchema
-ndc-lb:supportsDatastoreSchema rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-sr:YangDatastore ;
-		rdfs:range ndc-lb:DatastoreSchema ;
-		rdfs:label "supports datastore schema" .
+rdfs:seeAlso a owl:AnnotationProperty .
 
-## ndc-lb:moduleImport
-ndc-lb:moduleImport rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:ModuleSet ;
-		rdfs:range ndc-lb:ModuleImport ;
-		rdfs:label "module import" .
+owl:priorVersion a owl:AnnotationProperty .
 
-## ndc-lb:usesModuleSet
-ndc-lb:usesModuleSet rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:DatastoreSchema ;
-		rdfs:range ndc-lb:ModuleSet ;
-		rdfs:label "uses module set" .
+owl:versionIRI a owl:AnnotationProperty .
 
-## ndc-lb:includesSubmodule
-ndc-lb:includesSubmodule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range ndc-lb:Submodule ;
-		rdfs:label "includes submodule" .
+owl:versionInfo a owl:AnnotationProperty .
 
-## ndc-lb:developedBy
-ndc-lb:developedBy rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range schema:Organization ;
-		rdfs:label "developed by" .
+ndc-lb:augmentedByModule a owl:ObjectProperty ;
+    rdfs:label "augmented by module" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range ndc-lb:Module ;
+    rdfs:subPropertyOf ndc-lb:moduleDependency .
 
-## ndc-lb:usesFeature
-ndc-lb:usesFeature rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:ModuleImplementation ;
-		rdfs:range ndc-lb:Feature ;
-		rdfs:label "uses feature" .
+ndc-lb:developedBy a owl:ObjectProperty ;
+    rdfs:label "developed by" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range schema1:Organization .
 
-## ndc-lb:implementedModule
-ndc-lb:implementedModule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:ModuleImplementation ;
-		rdfs:range ndc-lb:Module ;
-		rdfs:label "implemented module" .
+ndc-lb:deviatedByModule a owl:ObjectProperty ;
+    rdfs:label "deviated by module" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range ndc-lb:Module ;
+    rdfs:subPropertyOf ndc-lb:moduleDependency .
 
-## ndc-lb:deviatedByModule
-ndc-lb:deviatedByModule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range ndc-lb:Module ;
-		rdfs:label "deviated by module" .
+ndc-lb:featureName a owl:DatatypeProperty ;
+    rdfs:label "feature name" ;
+    rdfs:domain ndc-lb:Feature ;
+    rdfs:range xsd:string .
 
-## ndc-lb:augmentedByModule
-ndc-lb:augmentedByModule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range ndc-lb:Module ;
-		rdfs:label "augmented by module" .
+ndc-lb:implementedModule a owl:ObjectProperty ;
+    rdfs:label "implemented module" ;
+    rdfs:domain ndc-lb:ModuleImplementation ;
+    rdfs:range ndc-lb:Module .
 
-## ndc-lb:importedModule
-ndc-lb:importedModule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:ModuleImport ;
-		rdfs:range ndc-lb:Module ;
-		rdfs:label "imported module" .
+ndc-lb:importedModule a owl:ObjectProperty ;
+    rdfs:label "imported module" ;
+    rdfs:domain ndc-lb:ModuleImport ;
+    rdfs:range ndc-lb:Module .
 
-## ndc-lb:importsModule
-ndc-lb:importsModule rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range ndc-lb:Module ;
-		rdfs:label "imports module" .
+ndc-lb:importsModule a owl:ObjectProperty ;
+    rdfs:label "imports module" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range ndc-lb:Module ;
+    rdfs:subPropertyOf ndc-lb:moduleDependency .
 
-## ndc-lb:supportsModuleSet
-ndc-lb:supportsModuleSet rdf:type owl:ObjectProperty ;
-		rdfs:domain ndc-sr:YangDatastore ;
-		rdfs:range ndc-lb:ModuleSet ;
-		rdfs:label "supports module set" .
+ndc-lb:includesSubmodule a owl:ObjectProperty ;
+    rdfs:label "includes submodule" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range ndc-lb:Submodule ;
+    rdfs:subPropertyOf ndc-lb:moduleDependency .
 
-## ndc-lb:moduleDependency
-ndc-lb:moduleDependency rdf:type owl:ObjectProperty ;
-		rdfs:label "module dependency" .
+ndc-lb:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:range xsd:anyURI .
 
-## ndc-lb:includesSubmodule
-ndc-lb:includesSubmodule rdf:type owl:ObjectProperty ;
-		rdfs:subPropertyOf ndc-lb:moduleDependency ;
-		rdfs:label "includes submodule" .
+ndc-lb:moduleContact a owl:DatatypeProperty ;
+    rdfs:label "module contact" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:string .
 
-## ndc-lb:moduleDependency
-ndc-lb:moduleDependency rdf:type owl:ObjectProperty ;
-		rdfs:label "module dependency" .
+ndc-lb:moduleDescription a owl:DatatypeProperty ;
+    rdfs:label "module description" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:string .
 
-## ndc-lb:deviatedByModule
-ndc-lb:deviatedByModule rdf:type owl:ObjectProperty ;
-		rdfs:subPropertyOf ndc-lb:moduleDependency ;
-		rdfs:label "deviated by module" .
+ndc-lb:moduleImplementation a owl:ObjectProperty ;
+    rdfs:label "module implementation" ;
+    rdfs:domain ndc-lb:ModuleSet ;
+    rdfs:range ndc-lb:ModuleImplementation .
 
-## ndc-lb:moduleDependency
-ndc-lb:moduleDependency rdf:type owl:ObjectProperty ;
-		rdfs:label "module dependency" .
+ndc-lb:moduleImport a owl:ObjectProperty ;
+    rdfs:label "module import" ;
+    rdfs:domain ndc-lb:ModuleSet ;
+    rdfs:range ndc-lb:ModuleImport .
 
-## ndc-lb:importsModule
-ndc-lb:importsModule rdf:type owl:ObjectProperty ;
-		rdfs:subPropertyOf ndc-lb:moduleDependency ;
-		rdfs:label "imports module" .
+ndc-lb:moduleName a owl:DatatypeProperty ;
+    rdfs:label "module name" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:string .
 
-## ndc-lb:moduleDependency
-ndc-lb:moduleDependency rdf:type owl:ObjectProperty ;
-		rdfs:label "module dependency" .
+ndc-lb:moduleSetId a owl:DatatypeProperty ;
+    rdfs:label "module set id" ;
+    rdfs:domain ndc-lb:ModuleSet ;
+    rdfs:range xsd:string .
 
-## ndc-lb:augmentedByModule
-ndc-lb:augmentedByModule rdf:type owl:ObjectProperty ;
-		rdfs:subPropertyOf ndc-lb:moduleDependency ;
-		rdfs:label "augmented by module" .
+ndc-lb:namespace a owl:DatatypeProperty ;
+    rdfs:label "namespace" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:anyURI .
 
-#################################
-#    Data Properties
-#################################
+ndc-lb:prefix a owl:DatatypeProperty ;
+    rdfs:label "prefix" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:string .
 
-## ndc-lb:moduleName
-ndc-lb:moduleName rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:string ;
-		rdfs:label "module name" .
+ndc-lb:referenceDocument a owl:DatatypeProperty ;
+    rdfs:label "reference document" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:anyURI .
 
-## ndc-lb:revisionDate
-ndc-lb:revisionDate rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:date ;
-		rdfs:label "revision date" .
+ndc-lb:repositoryLocation a owl:DatatypeProperty ;
+    rdfs:label "repository location" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:anyURI .
 
-## ndc-lb:namespace
-ndc-lb:namespace rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:anyURI ;
-		rdfs:label "namespace" .
+ndc-lb:revisionDate a owl:DatatypeProperty ;
+    rdfs:label "revision date" ;
+    rdfs:domain ndc-lb:Module ;
+    rdfs:range xsd:date .
 
-## ndc-lb:prefix
-ndc-lb:prefix rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:string ;
-		rdfs:label "prefix" .
+ndc-lb:schemaId a owl:DatatypeProperty ;
+    rdfs:label "schema id" ;
+    rdfs:domain ndc-lb:DatastoreSchema ;
+    rdfs:range xsd:string .
 
-## ndc-lb:moduleDescription
-ndc-lb:moduleDescription rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:string ;
-		rdfs:label "module description" .
+ndc-lb:supportsDatastoreSchema a owl:ObjectProperty ;
+    rdfs:label "supports datastore schema" ;
+    rdfs:domain ndc-sr:YangDatastore ;
+    rdfs:range ndc-lb:DatastoreSchema .
 
-## ndc-lb:moduleContact
-ndc-lb:moduleContact rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:string ;
-		rdfs:label "module contact" .
+ndc-lb:supportsModuleSet a owl:ObjectProperty ;
+    rdfs:label "supports module set" ;
+    rdfs:domain ndc-sr:YangDatastore ;
+    rdfs:range ndc-lb:ModuleSet .
 
-## ndc-lb:referenceDocument
-ndc-lb:referenceDocument rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:anyURI ;
-		rdfs:label "reference document" .
+ndc-lb:usesFeature a owl:ObjectProperty ;
+    rdfs:label "uses feature" ;
+    rdfs:domain ndc-lb:ModuleImplementation ;
+    rdfs:range ndc-lb:Feature .
 
-## ndc-lb:repositoryLocation
-ndc-lb:repositoryLocation rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Module ;
-		rdfs:range xsd:anyURI ;
-		rdfs:label "repository location" .
+ndc-lb:usesModuleSet a owl:ObjectProperty ;
+    rdfs:label "uses module set" ;
+    rdfs:domain ndc-lb:DatastoreSchema ;
+    rdfs:range ndc-lb:ModuleSet .
 
-## ndc-lb:moduleSetId
-ndc-lb:moduleSetId rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:ModuleSet ;
-		rdfs:range xsd:string ;
-		rdfs:label "module set id" .
+ndc-sr:NetconfCapability a owl:Class ;
+    rdfs:label "Netconf Capability" ;
+    rdfs:subClassOf ndc-lb:Feature .
 
-## ndc-lb:featureName
-ndc-lb:featureName rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:Feature ;
-		rdfs:range xsd:string ;
-		rdfs:label "feature name" .
+schema1:Organization a owl:Class ;
+    rdfs:label "Organization" .
 
-## ndc-lb:schemaId
-ndc-lb:schemaId rdf:type owl:DatatypeProperty ;
-		rdfs:domain ndc-lb:DatastoreSchema ;
-		rdfs:range xsd:string ;
-		rdfs:label "schema id" .
+ndc-lb: a owl:Ontology ;
+    dcterms:created "2025-05-05"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
+    dcterms:description "An ontology for representing YANG Library" ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Network Data Catalog Ontology – Library" ;
+    vann:preferredNamespacePrefix "ndc-lb" ;
+    vann:preferredNamespaceUri ndc-lb: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
+    rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
+    owl:priorVersion <https://w3id.org/network-data-catalog/library> ;
+    owl:versionIRI <https://w3id.org/network-data-catalog/library> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
 
-## ndc-lb:location
-ndc-lb:location rdf:type owl:DatatypeProperty ;
-		rdfs:range xsd:anyURI ;
-		rdfs:label "location" .
+ndc-lb:Submodule a owl:Class ;
+    rdfs:label "Submodule" ;
+    rdfs:subClassOf ndc-lb:Module .
 
-## ndc-lb:location
-ndc-lb:location rdf:type owl:DatatypeProperty ;
-		rdfs:range xsd:anyURI ;
-		rdfs:label "location" .
+ndc-lb:ModuleImport a owl:Class ;
+    rdfs:label "Module Import" .
 
-## schema:name
-schema:name rdf:type owl:DatatypeProperty ;
-		rdfs:range xsd:string ;
-		rdfs:label "name" .
+ndc-sr:YangDatastore a owl:Class ;
+    rdfs:label "Yang Datastore" .
 
-#################################
-#    Classes
-#################################
+ndc-lb:DatastoreSchema a owl:Class ;
+    rdfs:label "Datastore Schema" .
 
-## ndc-lb:ModuleSet
-ndc-lb:ModuleSet rdf:type owl:Class ;
-	rdfs:label "Module Set" .
+ndc-lb:Feature a owl:Class ;
+    rdfs:label "Feature" .
 
-## ndc-lb:DatastoreSchema
-ndc-lb:DatastoreSchema rdf:type owl:Class ;
-	rdfs:label "Datastore Schema" .
+ndc-lb:ModuleImplementation a owl:Class ;
+    rdfs:label "Module Implementation" .
 
-## ndc-lb:Submodule
-ndc-lb:Submodule rdf:type owl:Class ;
-	rdfs:label "Submodule" ;
-	rdfs:subClassOf ndc-lb:Module .
+ndc-lb:moduleDependency a owl:ObjectProperty ;
+    rdfs:label "module dependency" .
 
-## ndc-lb:Module
-ndc-lb:Module rdf:type owl:Class ;
-	rdfs:label "Module" .
+ndc-lb:ModuleSet a owl:Class ;
+    rdfs:label "Module Set" .
 
-## ndc-lb:Feature
-ndc-lb:Feature rdf:type owl:Class ;
-	rdfs:label "Feature" .
-
-## ndc-sr:NetconfCapability
-ndc-sr:NetconfCapability rdf:type owl:Class ;
-	rdfs:label "Netconf Capability" ;
-	rdfs:subClassOf ndc-lb:Feature .
-
-## ndc-lb:ModuleImplementation
-ndc-lb:ModuleImplementation rdf:type owl:Class ;
-	rdfs:label "Module Implementation" .
-
-## ndc-lb:ModuleImport
-ndc-lb:ModuleImport rdf:type owl:Class ;
-	rdfs:label "Module Import" .
-
-## ndc-sr:YangDatastore
-ndc-sr:YangDatastore rdf:type owl:Class ;
-	rdfs:label "Yang Datastore" .
-
-## schema:Organization
-schema:Organization rdf:type owl:Class ;
-	rdfs:label "Organization" .
-
-#################################
-#    Instances
-#################################
-
-#################################
-#    General Axioms
-#################################
-
+ndc-lb:Module a owl:Class ;
+    rdfs:label "Module" .
