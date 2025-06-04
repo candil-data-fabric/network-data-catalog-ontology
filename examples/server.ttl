@@ -16,7 +16,12 @@
 
 <NetworkDevice/srl> a ndc-sr:NetworkDevice;
   ndc-sr:deviceId "srl";
-  ndc-sr:runsYangServer <NetworkDevice/srl/NetconfServer>, <NetworkDevice/srl/GnmiServer> .
+  ndc-sr:runsYangServer <NetworkDevice/srl/NetconfServer>, <NetworkDevice/srl/GnmiServer> ;
+  ndc-sr:implementsYangDatastore <NetworkDevice/srl/Datastore/intended> ,
+                                 <NetworkDevice/srl/Datastore/candidate> ,
+                                 <NetworkDevice/srl/Datastore/startup> ,
+                                 <NetworkDevice/srl/Datastore/running> ,
+                                 <NetworkDevice/srl/Datastore/operational> .
 
 <NetworkDevice/srl/NetconfServer> a ndc-sr:NetconfServer;
   ndc-sr:socketAddress <NetworkDevice/srl/NetconfServer/SocketAddress>;
@@ -48,3 +53,23 @@
 <NetworkDevice/srl/GnmiServer/AccountAuthenticationFacet> a observable:AccountAuthenticationFacet;
   observable:password "NokiaSrl1!";
   observable:passwordType "plain-text" .
+
+<NetworkDevice/srl/Datastore/intended> a ndc-sr:IntendedDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/startup> a ndc-sr:StartupDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/running> a ndc-sr:RunningDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/operational> a ndc-sr:OperationalDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/candidate> a ndc-sr:CandidateDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
