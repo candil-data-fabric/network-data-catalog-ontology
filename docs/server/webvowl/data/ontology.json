@@ -113,7 +113,7 @@
     "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -161,7 +161,7 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "49",
@@ -255,16 +255,6 @@
     "id" : "5",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/network-data-catalog/server#GnmiServer",
-    "baseIri" : "https://w3id.org/network-data-catalog/server",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "GnmiServer",
-      "undefined" : "Gnmi Server"
-    },
-    "id" : "20",
-    "superClasses" : [ "21" ]
-  }, {
     "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -274,7 +264,17 @@
     },
     "subClasses" : [ "13" ],
     "attributes" : [ "external" ],
-    "id" : "22"
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#GnmiServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GnmiServer",
+      "undefined" : "Gnmi Server"
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet",
     "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
@@ -420,8 +420,8 @@
       "IRI-based" : "YangServer",
       "undefined" : "Yang Server"
     },
-    "subClasses" : [ "20", "26" ],
-    "id" : "21"
+    "subClasses" : [ "21", "26" ],
+    "id" : "22"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -463,16 +463,16 @@
         "IRI-based" : "YangLibrary11Capability"
       }
     }, {
-      "iri" : "https://w3id.org/network-data-catalog/server#WritableRunningCapability",
-      "baseIri" : "https://w3id.org/network-data-catalog/server",
-      "labels" : {
-        "IRI-based" : "WritableRunningCapability"
-      }
-    }, {
       "iri" : "https://w3id.org/network-data-catalog/server#XpathCapability",
       "baseIri" : "https://w3id.org/network-data-catalog/server",
       "labels" : {
         "IRI-based" : "XpathCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#WritableRunningCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "WritableRunningCapability"
       }
     }, {
       "iri" : "https://w3id.org/network-data-catalog/server#YangLibrary10Capability",
@@ -525,7 +525,7 @@
       "undefined" : "Server Account"
     },
     "id" : "13",
-    "superClasses" : [ "12", "22" ]
+    "superClasses" : [ "12", "20" ]
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#NetconfServer",
     "baseIri" : "https://w3id.org/network-data-catalog/server",
@@ -535,7 +535,7 @@
       "undefined" : "Netconf Server"
     },
     "id" : "26",
-    "superClasses" : [ "21" ]
+    "superClasses" : [ "22" ]
   } ],
   "property" : [ {
     "id" : "6",
@@ -637,7 +637,7 @@
       "undefined" : "password"
     },
     "domain" : "7",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "6"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#deviceId",
@@ -670,22 +670,22 @@
       "undefined" : "has facet"
     },
     "domain" : "19",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "18"
   }, {
-    "range" : "21",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "2",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
-    "range" : "21",
+    "range" : "22",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/passwordType",
@@ -696,37 +696,37 @@
       "undefined" : "password type"
     },
     "domain" : "7",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "27"
   }, {
     "range" : "2",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
-    "range" : "22",
+    "range" : "20",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "35"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "12",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#protocolVersion",
@@ -736,7 +736,7 @@
       "IRI-based" : "protocolVersion",
       "undefined" : "protocol version"
     },
-    "domain" : "21",
+    "domain" : "22",
     "attributes" : [ "datatype" ],
     "id" : "38"
   }, {
@@ -747,13 +747,13 @@
       "IRI-based" : "supportsGnmiEncoding",
       "undefined" : "supports gnmi encoding"
     },
-    "domain" : "20",
+    "domain" : "21",
     "attributes" : [ "object" ],
     "id" : "40"
   }, {
     "range" : "1",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#netconfCapabilityId",
@@ -769,7 +769,7 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#implementsYangDatastore",
@@ -796,7 +796,7 @@
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#runsYangServer",
     "baseIri" : "https://w3id.org/network-data-catalog/server",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "IRI-based" : "runsYangServer",
       "undefined" : "runs yang server"
@@ -807,7 +807,7 @@
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#exposedByYangServer",
     "baseIri" : "https://w3id.org/network-data-catalog/server",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "IRI-based" : "exposedByYangServer",
       "undefined" : "exposed by yang server"
@@ -823,8 +823,8 @@
       "IRI-based" : "accountName",
       "undefined" : "account name"
     },
-    "domain" : "22",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "20",
+    "attributes" : [ "external", "datatype" ],
     "id" : "54"
   }, {
     "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/addressValue",
@@ -835,7 +835,7 @@
       "undefined" : "address value"
     },
     "domain" : "19",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "55"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#netconfCapability",
@@ -857,7 +857,7 @@
       "undefined" : "user name"
     },
     "domain" : "19",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "57"
   }, {
     "iri" : "https://w3id.org/network-data-catalog/server#serverAccount",
@@ -867,7 +867,7 @@
       "IRI-based" : "serverAccount",
       "undefined" : "server account"
     },
-    "domain" : "21",
+    "domain" : "22",
     "attributes" : [ "object" ],
     "id" : "58"
   }, {
@@ -878,7 +878,7 @@
       "IRI-based" : "socketAddress",
       "undefined" : "socket address"
     },
-    "domain" : "21",
+    "domain" : "22",
     "attributes" : [ "object" ],
     "id" : "59"
   }, {
