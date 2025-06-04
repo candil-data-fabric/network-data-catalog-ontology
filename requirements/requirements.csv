@@ -1,4 +1,4 @@
-Id,Subdomain,Competency Question/Fact
+Id,Domain,Competency Question/Fact
 F1,Library,A YANG library collection of the YANG modules and submodules used by a YANG server
 F2,Library,"A submodule provides a partial module definition except for the namespace, which is defined by the module that the submodule belongs to"
 F3,Library,YANG library is implemented by the operational datastore
