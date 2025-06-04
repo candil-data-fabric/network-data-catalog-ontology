@@ -4,6 +4,7 @@
 ONTOLOGY_DIR="ontology"
 DOCS_DIR="docs"
 DIAGRAMS_DIR="diagrams"
+EVAL_DIR="evaluation"
 
 # STEP 1: ONTOLOGY CONCEPTUALIZATION
 
@@ -65,8 +66,8 @@ for file in "$ONTOLOGY_DIR"/*.ttl; do
         #git checkout docs/$module_name/sections/description-en.html
 
         # Copy ontology diagram into resources module
-        mkdir docs/$module_name/resources/images
-        cp diagrams/$module_name/$module_name.svg docs/$module_name/resources/images/
+        mkdir $DOCS_DIR/$module_name/resources/images
+        cp diagrams/$module_name/$module_name.svg $DOCS_DIR/$module_name/resources/images/
 
         # Insert chowlk diagram into description
         html_file="docs/$module_name/sections/description-en.html"
@@ -79,6 +80,12 @@ for file in "$ONTOLOGY_DIR"/*.ttl; do
         echo -e "$replacement" >> "$html_file"
 
         # Rename index html file
-        mv docs/$module_name/index-en.html docs/$module_name/index.html
+        mv $DOCS_DIR/$module_name/index-en.html $DOCS_DIR/$module_name/index.html
+
+        # Move OOPS! report to evaluation folder
+        mkdir -p $EVAL_DIR/$module_name
+        mv $DOCS_DIR/$module_name/OOPSevaluation $EVAL_DIR/$module_name/OOPS
+
     fi
+
 done
