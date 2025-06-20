@@ -82,9 +82,9 @@ for file in "$ONTOLOGY_DIR"/*.ttl; do
         # Rename index html file
         mv $DOCS_DIR/$module_name/index-en.html $DOCS_DIR/$module_name/index.html
 
-        # Move OOPS! report to evaluation folder
+        # Copy OOPS! report to evaluation folder
         mkdir -p $EVAL_DIR/$module_name
-        mv $DOCS_DIR/$module_name/OOPSevaluation $EVAL_DIR/$module_name/OOPS
+        cp -r $DOCS_DIR/$module_name/OOPSevaluation $EVAL_DIR/$module_name/OOPS
 
     fi
 
