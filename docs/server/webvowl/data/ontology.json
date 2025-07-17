@@ -1,0 +1,896 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://ontology.unifiedcyberontology.org/uco/core", "https://ontology.unifiedcyberontology.org/uco/observable", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/network-data-catalog/server" ],
+    "title" : {
+      "undefined" : "The Network Data Catalog Ontology – Server"
+    },
+    "iri" : "https://w3id.org/network-data-catalog/server#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ],
+    "description" : {
+      "undefined" : "An ontology for representing YANG servers"
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/server",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-05-17",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ndc-sr",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/server#",
+        "type" : "iri"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/network-data-catalog-ontology",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Network Data Catalog Ontology – Server",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://datatracker.ietf.org/doc/rfc8525/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/network-data-catalog/server#RunningDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RunningDatastore",
+      "undefined" : "Running Datastore"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#ConventionalDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConventionalDatastore",
+      "undefined" : "Conventional Datastore"
+    },
+    "subClasses" : [ "0", "3", "4", "5" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#CandidateDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CandidateDatastore",
+      "undefined" : "Candidate Datastore"
+    },
+    "id" : "3",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/UserAccount",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserAccount",
+      "undefined" : "User Account"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#IntendedDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntendedDatastore",
+      "undefined" : "Intended Datastore"
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#DynamicDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DynamicDatastore",
+      "undefined" : "Dynamic Datastore"
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#StartupDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StartupDatastore",
+      "undefined" : "Startup Datastore"
+    },
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#GnmiServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GnmiServer",
+      "undefined" : "Gnmi Server"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnlineAccount",
+      "undefined" : "Online Account"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountAuthenticationFacet",
+      "undefined" : "Account Authentication Facet"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#GnmiEncoding",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GnmiEncoding",
+      "undefined" : "Gnmi Encoding"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/network-data-catalog/server#JsonGnmiEncoding",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "JsonGnmiEncoding"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#ProtobufGnmiEncoding",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "ProtobufGnmiEncoding"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#JsonIetfGnmiEncoding",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "JsonIetfGnmiEncoding"
+      }
+    } ],
+    "id" : "29"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/SocketAddress",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocketAddress",
+      "undefined" : "Socket Address"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#YangDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "YangDatastore",
+      "undefined" : "Yang Datastore"
+    },
+    "subClasses" : [ "32", "1", "17" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#NetworkDevice",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkDevice",
+      "undefined" : "Network Device"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#YangServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "YangServer",
+      "undefined" : "Yang Server"
+    },
+    "subClasses" : [ "20", "26" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#NetconfCapability",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetconfCapability",
+      "undefined" : "Netconf Capability"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/network-data-catalog/server#ConfirmedCommitCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "ConfirmedCommitCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#RollbackOnErrorCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "RollbackOnErrorCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#YangLibrary11Capability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "YangLibrary11Capability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#WritableRunningCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "WritableRunningCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#XpathCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "XpathCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#YangLibrary10Capability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "YangLibrary10Capability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#ValidateCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "ValidateCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#StartupCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "StartupCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#UrlCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "UrlCapability"
+      }
+    }, {
+      "iri" : "https://w3id.org/network-data-catalog/server#CandidateCapability",
+      "baseIri" : "https://w3id.org/network-data-catalog/server",
+      "labels" : {
+        "IRI-based" : "CandidateCapability"
+      }
+    } ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#OperationalDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationalDatastore",
+      "undefined" : "Operational Datastore"
+    },
+    "id" : "32",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#ServerAccount",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServerAccount",
+      "undefined" : "Server Account"
+    },
+    "id" : "13",
+    "superClasses" : [ "12", "22" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#NetconfServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetconfServer",
+      "undefined" : "Netconf Server"
+    },
+    "id" : "26",
+    "superClasses" : [ "21" ]
+  } ],
+  "property" : [ {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/password",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "password",
+      "undefined" : "password"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#deviceId",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "deviceId",
+      "undefined" : "device id"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#netconfCapabilityName",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "netconfCapabilityName",
+      "undefined" : "netconf capability name"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/core/hasFacet",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/core",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasFacet",
+      "undefined" : "has facet"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "21",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/passwordType",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "passwordType",
+      "undefined" : "password type"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "22",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#protocolVersion",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "protocolVersion",
+      "undefined" : "protocol version"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#supportsGnmiEncoding",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "supportsGnmiEncoding",
+      "undefined" : "supports gnmi encoding"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#netconfCapabilityId",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "netconfCapabilityId",
+      "undefined" : "netconf capability id"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#implementsYangDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "implementsYangDatastore",
+      "undefined" : "implements yang datastore"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#username",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "username",
+      "undefined" : "username"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#runsYangServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "runsYangServer",
+      "undefined" : "runs yang server"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#exposedByYangServer",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "exposedByYangServer",
+      "undefined" : "exposed by yang server"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/addressValue",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "addressValue",
+      "undefined" : "address value"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "accountName",
+      "undefined" : "account name"
+    },
+    "domain" : "22",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#netconfCapability",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "netconfCapability",
+      "undefined" : "netconf capability"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://ontology.unifiedcyberontology.org/uco/observable/userName",
+    "baseIri" : "https://ontology.unifiedcyberontology.org/uco/observable",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "userName",
+      "undefined" : "user name"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#serverAccount",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "serverAccount",
+      "undefined" : "server account"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#socketAddress",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "socketAddress",
+      "undefined" : "socket address"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#netconfCapabilityVersion",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "netconfCapabilityVersion",
+      "undefined" : "netconf capability version"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  } ]
+}

@@ -1,0 +1,761 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/network-data-catalog/library", "https://w3id.org/network-data-catalog/server" ],
+    "title" : {
+      "undefined" : "The Network Data Catalog Ontology – Library"
+    },
+    "iri" : "https://w3id.org/network-data-catalog/library#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ],
+    "description" : {
+      "undefined" : "An ontology for representing YANG Library"
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/library",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-05-05",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ndc-lb",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/network-data-catalog-ontology",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/network-data-catalog/library#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Network Data Catalog Ontology – Library",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://datatracker.ietf.org/doc/rfc8525/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/network-data-catalog/library#Submodule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Submodule",
+      "undefined" : "Submodule"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#ModuleSet",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModuleSet",
+      "undefined" : "Module Set"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#Feature",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature",
+      "undefined" : "Feature"
+    },
+    "subClasses" : [ "16" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#ModuleImplementation",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModuleImplementation",
+      "undefined" : "Module Implementation"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#Module",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Module",
+      "undefined" : "Module"
+    },
+    "subClasses" : [ "9" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#YangDatastore",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "YangDatastore",
+      "undefined" : "Yang Datastore"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#ModuleImport",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModuleImport",
+      "undefined" : "Module Import"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/server#NetconfCapability",
+    "baseIri" : "https://w3id.org/network-data-catalog/server",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetconfCapability",
+      "undefined" : "Netconf Capability"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#DatastoreSchema",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatastoreSchema",
+      "undefined" : "Datastore Schema"
+    },
+    "id" : "12"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/network-data-catalog/library#repositoryLocation",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "repositoryLocation",
+      "undefined" : "repository location"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#location",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleImport",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "moduleImport",
+      "undefined" : "module import"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#usesModuleSet",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "usesModuleSet",
+      "undefined" : "uses module set"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#prefix",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "prefix",
+      "undefined" : "prefix"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleSetId",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "moduleSetId",
+      "undefined" : "module set id"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#supportsModuleSet",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "supportsModuleSet",
+      "undefined" : "supports module set"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "15",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleName",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "moduleName",
+      "undefined" : "module name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleDependency",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "moduleDependency",
+      "undefined" : "module dependency"
+    },
+    "domain" : "4",
+    "subproperty" : [ "33", "34", "35", "36" ],
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#featureName",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "featureName",
+      "undefined" : "feature name"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#schemaId",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "schemaId",
+      "undefined" : "schema id"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#revisionDate",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "revisionDate",
+      "undefined" : "revision date"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#developedBy",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "developedBy",
+      "undefined" : "developed by"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleImplementation",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "moduleImplementation",
+      "undefined" : "module implementation"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#importedModule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "importedModule",
+      "undefined" : "imported module"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#supportsDatastoreSchema",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "supportsDatastoreSchema",
+      "undefined" : "supports datastore schema"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleDescription",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "moduleDescription",
+      "undefined" : "module description"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#usesFeature",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "usesFeature",
+      "undefined" : "uses feature"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#augmentedByModule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "augmentedByModule",
+      "undefined" : "augmented by module"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#importsModule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "importsModule",
+      "undefined" : "imports module"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#deviatedByModule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "deviatedByModule",
+      "undefined" : "deviated by module"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#moduleContact",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "moduleContact",
+      "undefined" : "module contact"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#includesSubmodule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "includesSubmodule",
+      "undefined" : "includes submodule"
+    },
+    "superproperty" : [ "32" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#implementedModule",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "implementedModule",
+      "undefined" : "implemented module"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#namespace",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "namespace",
+      "undefined" : "namespace"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/network-data-catalog/library#referenceDocument",
+    "baseIri" : "https://w3id.org/network-data-catalog/library",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "referenceDocument",
+      "undefined" : "reference document"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  } ]
+}

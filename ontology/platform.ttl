@@ -1,0 +1,100 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ndc-pm: <https://w3id.org/network-data-catalog/platform#> .
+@prefix ndc-sr: <https://w3id.org/network-data-catalog/server#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+schema1:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string .
+
+rdfs:seeAlso a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ndc-pm:operatingSystem a owl:ObjectProperty ;
+    rdfs:label "operating system" ;
+    rdfs:domain ndc-sr:NetworkDevice ;
+    rdfs:range ndc-pm:OperatingSystem .
+
+ndc-pm:osName a owl:DatatypeProperty ;
+    rdfs:label "os name" ;
+    rdfs:domain ndc-pm:OperatingSystem ;
+    rdfs:range xsd:string .
+
+ndc-pm:osVersion a owl:DatatypeProperty ;
+    rdfs:label "os version" ;
+    rdfs:domain ndc-pm:OperatingSystem ;
+    rdfs:range xsd:string .
+
+ndc-pm:platform a owl:ObjectProperty ;
+    rdfs:label "platform" ;
+    rdfs:domain ndc-sr:NetworkDevice ;
+    rdfs:range ndc-pm:Platform .
+
+ndc-pm:platformName a owl:DatatypeProperty ;
+    rdfs:label "platform name" ;
+    rdfs:domain ndc-pm:Platform ;
+    rdfs:range xsd:string .
+
+ndc-pm:vendor a owl:ObjectProperty ;
+    rdfs:label "vendor" ;
+    rdfs:range ndc-pm:Vendor .
+
+schema1:Organization a owl:Class ;
+    rdfs:label "Organization" .
+
+ndc-pm: a owl:Ontology ;
+    dcterms:created "2025-05-05"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
+    dcterms:description "An ontology for representing platform information of network devices" ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Network Data Catalog Ontology – Platform" ;
+    vann:preferredNamespacePrefix "ndc-pm" ;
+    vann:preferredNamespaceUri ndc-pm: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
+    rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
+    owl:priorVersion <https://w3id.org/network-data-catalog/platform> ;
+    owl:versionIRI <https://w3id.org/network-data-catalog/platform> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ndc-pm:Vendor a owl:Class ;
+    rdfs:label "Vendor" ;
+    rdfs:subClassOf schema1:Organization .
+
+ndc-pm:Platform a owl:Class ;
+    rdfs:label "Platform" .
+
+ndc-sr:NetworkDevice a owl:Class ;
+    rdfs:label "Network Device" .
+
+ndc-pm:OperatingSystem a owl:Class ;
+    rdfs:label "Operating System" .

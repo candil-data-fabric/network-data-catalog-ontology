@@ -1,0 +1,779 @@
+<h2 id="crossreference" class="list">Cross-reference for The Network Data Catalog Ontology – Library classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Network Data Catalog Ontology – Library.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#DatastoreSchema" title="https://w3id.org/network-data-catalog/library#DatastoreSchema">Datastore Schema</a></li>
+  <li><a href="#Feature" title="https://w3id.org/network-data-catalog/library#Feature">Feature</a></li>
+  <li><a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a></li>
+  <li><a href="#ModuleImplementation" title="https://w3id.org/network-data-catalog/library#ModuleImplementation">Module Implementation</a></li>
+  <li><a href="#ModuleImport" title="https://w3id.org/network-data-catalog/library#ModuleImport">Module Import</a></li>
+  <li><a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a></li>
+  <li><a href="#https://w3id.org/network-data-catalog/server#NetconfCapability" title="https://w3id.org/network-data-catalog/server#NetconfCapability">Netconf Capability</a></li>
+  <li><a href="#http://schema.org/Organization" title="http://schema.org/Organization">Organization</a></li>
+  <li><a href="#Submodule" title="https://w3id.org/network-data-catalog/library#Submodule">Submodule</a></li>
+  <li><a href="#https://w3id.org/network-data-catalog/server#YangDatastore" title="https://w3id.org/network-data-catalog/server#YangDatastore">Yang Datastore</a></li>
+ </ul>
+ <div class="entity" id="DatastoreSchema">
+  <h3>Datastore Schema<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#DatastoreSchema</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#schemaId" title="https://w3id.org/network-data-catalog/library#schemaId">schema id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesModuleSet" title="https://w3id.org/network-data-catalog/library#usesModuleSet">uses module set</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#supportsDatastoreSchema" title="https://w3id.org/network-data-catalog/library#supportsDatastoreSchema">supports datastore schema</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Feature">
+  <h3>Feature<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#Feature</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/network-data-catalog/server#NetconfCapability" title="https://w3id.org/network-data-catalog/server#NetconfCapability">Netconf Capability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#featureName" title="https://w3id.org/network-data-catalog/library#featureName">feature name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesFeature" title="https://w3id.org/network-data-catalog/library#usesFeature">uses feature</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Module">
+  <h3>Module<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#Module</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Submodule" title="https://w3id.org/network-data-catalog/library#Submodule">Submodule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#augmentedByModule" title="https://w3id.org/network-data-catalog/library#augmentedByModule">augmented by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#developedBy" title="https://w3id.org/network-data-catalog/library#developedBy">developed by</a> <sup class="type-op" title="object property">op</sup>, <a href="#deviatedByModule" title="https://w3id.org/network-data-catalog/library#deviatedByModule">deviated by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#importsModule" title="https://w3id.org/network-data-catalog/library#importsModule">imports module</a> <sup class="type-op" title="object property">op</sup>, <a href="#includesSubmodule" title="https://w3id.org/network-data-catalog/library#includesSubmodule">includes submodule</a> <sup class="type-op" title="object property">op</sup>, <a href="#moduleContact" title="https://w3id.org/network-data-catalog/library#moduleContact">module contact</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#moduleDescription" title="https://w3id.org/network-data-catalog/library#moduleDescription">module description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#moduleName" title="https://w3id.org/network-data-catalog/library#moduleName">module name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#namespace" title="https://w3id.org/network-data-catalog/library#namespace">namespace</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#prefix" title="https://w3id.org/network-data-catalog/library#prefix">prefix</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#referenceDocument" title="https://w3id.org/network-data-catalog/library#referenceDocument">reference document</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#repositoryLocation" title="https://w3id.org/network-data-catalog/library#repositoryLocation">repository location</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#revisionDate" title="https://w3id.org/network-data-catalog/library#revisionDate">revision date</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#augmentedByModule" title="https://w3id.org/network-data-catalog/library#augmentedByModule">augmented by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#deviatedByModule" title="https://w3id.org/network-data-catalog/library#deviatedByModule">deviated by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#implementedModule" title="https://w3id.org/network-data-catalog/library#implementedModule">implemented module</a> <sup class="type-op" title="object property">op</sup>, <a href="#importedModule" title="https://w3id.org/network-data-catalog/library#importedModule">imported module</a> <sup class="type-op" title="object property">op</sup>, <a href="#importsModule" title="https://w3id.org/network-data-catalog/library#importsModule">imports module</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ModuleImplementation">
+  <h3>Module Implementation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#ModuleImplementation</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#implementedModule" title="https://w3id.org/network-data-catalog/library#implementedModule">implemented module</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesFeature" title="https://w3id.org/network-data-catalog/library#usesFeature">uses feature</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#moduleImplementation" title="https://w3id.org/network-data-catalog/library#moduleImplementation">module implementation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ModuleImport">
+  <h3>Module Import<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#ModuleImport</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#importedModule" title="https://w3id.org/network-data-catalog/library#importedModule">imported module</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#moduleImport" title="https://w3id.org/network-data-catalog/library#moduleImport">module import</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ModuleSet">
+  <h3>Module Set<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#ModuleSet</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#moduleImplementation" title="https://w3id.org/network-data-catalog/library#moduleImplementation">module implementation</a> <sup class="type-op" title="object property">op</sup>, <a href="#moduleImport" title="https://w3id.org/network-data-catalog/library#moduleImport">module import</a> <sup class="type-op" title="object property">op</sup>, <a href="#moduleSetId" title="https://w3id.org/network-data-catalog/library#moduleSetId">module set id</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#supportsModuleSet" title="https://w3id.org/network-data-catalog/library#supportsModuleSet">supports module set</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesModuleSet" title="https://w3id.org/network-data-catalog/library#usesModuleSet">uses module set</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/network-data-catalog/server#NetconfCapability">
+  <h3>Netconf Capability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/server#NetconfCapability</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Feature" title="https://w3id.org/network-data-catalog/library#Feature">Feature</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/Organization</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#developedBy" title="https://w3id.org/network-data-catalog/library#developedBy">developed by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Submodule">
+  <h3>Submodule<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#Submodule</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#includesSubmodule" title="https://w3id.org/network-data-catalog/library#includesSubmodule">includes submodule</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/network-data-catalog/server#YangDatastore">
+  <h3>Yang Datastore<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/server#YangDatastore</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#supportsDatastoreSchema" title="https://w3id.org/network-data-catalog/library#supportsDatastoreSchema">supports datastore schema</a> <sup class="type-op" title="object property">op</sup>, <a href="#supportsModuleSet" title="https://w3id.org/network-data-catalog/library#supportsModuleSet">supports module set</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#augmentedByModule" title="https://w3id.org/network-data-catalog/library#augmentedByModule">augmented by module</a></li>
+  <li><a href="#developedBy" title="https://w3id.org/network-data-catalog/library#developedBy">developed by</a></li>
+  <li><a href="#deviatedByModule" title="https://w3id.org/network-data-catalog/library#deviatedByModule">deviated by module</a></li>
+  <li><a href="#implementedModule" title="https://w3id.org/network-data-catalog/library#implementedModule">implemented module</a></li>
+  <li><a href="#importedModule" title="https://w3id.org/network-data-catalog/library#importedModule">imported module</a></li>
+  <li><a href="#importsModule" title="https://w3id.org/network-data-catalog/library#importsModule">imports module</a></li>
+  <li><a href="#includesSubmodule" title="https://w3id.org/network-data-catalog/library#includesSubmodule">includes submodule</a></li>
+  <li><a href="#moduleDependency" title="https://w3id.org/network-data-catalog/library#moduleDependency">module dependency</a></li>
+  <li><a href="#moduleImplementation" title="https://w3id.org/network-data-catalog/library#moduleImplementation">module implementation</a></li>
+  <li><a href="#moduleImport" title="https://w3id.org/network-data-catalog/library#moduleImport">module import</a></li>
+  <li><a href="#supportsDatastoreSchema" title="https://w3id.org/network-data-catalog/library#supportsDatastoreSchema">supports datastore schema</a></li>
+  <li><a href="#supportsModuleSet" title="https://w3id.org/network-data-catalog/library#supportsModuleSet">supports module set</a></li>
+  <li><a href="#usesFeature" title="https://w3id.org/network-data-catalog/library#usesFeature">uses feature</a></li>
+  <li><a href="#usesModuleSet" title="https://w3id.org/network-data-catalog/library#usesModuleSet">uses module set</a></li>
+ </ul>
+ <div class="entity" id="augmentedByModule">
+  <h3>augmented by module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#augmentedByModule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#moduleDependency" title="https://w3id.org/network-data-catalog/library#moduleDependency">module dependency</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="developedBy">
+  <h3>developed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#developedBy</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://schema.org/Organization" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviatedByModule">
+  <h3>deviated by module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#deviatedByModule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#moduleDependency" title="https://w3id.org/network-data-catalog/library#moduleDependency">module dependency</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="implementedModule">
+  <h3>implemented module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#implementedModule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleImplementation" title="https://w3id.org/network-data-catalog/library#ModuleImplementation">Module Implementation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="importedModule">
+  <h3>imported module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#importedModule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleImport" title="https://w3id.org/network-data-catalog/library#ModuleImport">Module Import</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="importsModule">
+  <h3>imports module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#importsModule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#moduleDependency" title="https://w3id.org/network-data-catalog/library#moduleDependency">module dependency</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="includesSubmodule">
+  <h3>includes submodule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#includesSubmodule</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#moduleDependency" title="https://w3id.org/network-data-catalog/library#moduleDependency">module dependency</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Submodule" title="https://w3id.org/network-data-catalog/library#Submodule">Submodule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleDependency">
+  <h3>module dependency<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleDependency</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#augmentedByModule" title="https://w3id.org/network-data-catalog/library#augmentedByModule">augmented by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#deviatedByModule" title="https://w3id.org/network-data-catalog/library#deviatedByModule">deviated by module</a> <sup class="type-op" title="object property">op</sup>, <a href="#importsModule" title="https://w3id.org/network-data-catalog/library#importsModule">imports module</a> <sup class="type-op" title="object property">op</sup>, <a href="#includesSubmodule" title="https://w3id.org/network-data-catalog/library#includesSubmodule">includes submodule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleImplementation">
+  <h3>module implementation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleImplementation</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModuleImplementation" title="https://w3id.org/network-data-catalog/library#ModuleImplementation">Module Implementation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleImport">
+  <h3>module import<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleImport</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModuleImport" title="https://w3id.org/network-data-catalog/library#ModuleImport">Module Import</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="supportsDatastoreSchema">
+  <h3>supports datastore schema<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#supportsDatastoreSchema</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/network-data-catalog/server#YangDatastore" title="https://w3id.org/network-data-catalog/server#YangDatastore">Yang Datastore</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DatastoreSchema" title="https://w3id.org/network-data-catalog/library#DatastoreSchema">Datastore Schema</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="supportsModuleSet">
+  <h3>supports module set<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#supportsModuleSet</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/network-data-catalog/server#YangDatastore" title="https://w3id.org/network-data-catalog/server#YangDatastore">Yang Datastore</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesFeature">
+  <h3>uses feature<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#usesFeature</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleImplementation" title="https://w3id.org/network-data-catalog/library#ModuleImplementation">Module Implementation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Feature" title="https://w3id.org/network-data-catalog/library#Feature">Feature</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesModuleSet">
+  <h3>uses module set<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#usesModuleSet</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DatastoreSchema" title="https://w3id.org/network-data-catalog/library#DatastoreSchema">Datastore Schema</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#featureName" title="https://w3id.org/network-data-catalog/library#featureName">feature name</a></li>
+  <li><a href="#location" title="https://w3id.org/network-data-catalog/library#location">location</a></li>
+  <li><a href="#moduleContact" title="https://w3id.org/network-data-catalog/library#moduleContact">module contact</a></li>
+  <li><a href="#moduleDescription" title="https://w3id.org/network-data-catalog/library#moduleDescription">module description</a></li>
+  <li><a href="#moduleName" title="https://w3id.org/network-data-catalog/library#moduleName">module name</a></li>
+  <li><a href="#moduleSetId" title="https://w3id.org/network-data-catalog/library#moduleSetId">module set id</a></li>
+  <li><a href="#http://schema.org/name" title="http://schema.org/name">name</a></li>
+  <li><a href="#namespace" title="https://w3id.org/network-data-catalog/library#namespace">namespace</a></li>
+  <li><a href="#prefix" title="https://w3id.org/network-data-catalog/library#prefix">prefix</a></li>
+  <li><a href="#referenceDocument" title="https://w3id.org/network-data-catalog/library#referenceDocument">reference document</a></li>
+  <li><a href="#repositoryLocation" title="https://w3id.org/network-data-catalog/library#repositoryLocation">repository location</a></li>
+  <li><a href="#revisionDate" title="https://w3id.org/network-data-catalog/library#revisionDate">revision date</a></li>
+  <li><a href="#schemaId" title="https://w3id.org/network-data-catalog/library#schemaId">schema id</a></li>
+ </ul>
+ <div class="entity" id="featureName">
+  <h3>feature name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#featureName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Feature" title="https://w3id.org/network-data-catalog/library#Feature">Feature</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="location">
+  <h3>location<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#location</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleContact">
+  <h3>module contact<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleContact</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleDescription">
+  <h3>module description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleDescription</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleName">
+  <h3>module name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="moduleSetId">
+  <h3>module set id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#moduleSetId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModuleSet" title="https://w3id.org/network-data-catalog/library#ModuleSet">Module Set</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://schema.org/name">
+  <h3>name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/name</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="namespace">
+  <h3>namespace<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#namespace</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="prefix">
+  <h3>prefix<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#prefix</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="referenceDocument">
+  <h3>reference document<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#referenceDocument</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="repositoryLocation">
+  <h3>repository location<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#repositoryLocation</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="revisionDate">
+  <h3>revision date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#revisionDate</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Module" title="https://w3id.org/network-data-catalog/library#Module">Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="schemaId">
+  <h3>schema id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/network-data-catalog/library#schemaId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DatastoreSchema" title="https://w3id.org/network-data-catalog/library#DatastoreSchema">Datastore Schema</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

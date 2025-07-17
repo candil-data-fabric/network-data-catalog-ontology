@@ -1,0 +1,167 @@
+<https://w3id.org/network-data-catalog/platform#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/network-data-catalog/platform#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/network-data-catalog/platform> .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/created> "2025-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/description> "An ontology for representing platform information of network devices" .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/dc/terms/title> "The Network Data Catalog Ontology – Platform" .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndc-pm" .
+<https://w3id.org/network-data-catalog/platform#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/network-data-catalog/platform#> .
+<https://w3id.org/network-data-catalog/platform#> <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/network-data-catalog/platform#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://datatracker.ietf.org/doc/rfc8525/> .
+<https://w3id.org/network-data-catalog/platform#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/network-data-catalog/platform> .
+<https://w3id.org/network-data-catalog/platform#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/network-data-catalog/platform#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/network-data-catalog/platform#operatingSystem
+<https://w3id.org/network-data-catalog/platform#operatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/platform#operatingSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/server#NetworkDevice> .
+<https://w3id.org/network-data-catalog/platform#operatingSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/platform#OperatingSystem> .
+<https://w3id.org/network-data-catalog/platform#operatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "operating system" .
+# 
+# https://w3id.org/network-data-catalog/platform#platform
+<https://w3id.org/network-data-catalog/platform#platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/platform#platform> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/server#NetworkDevice> .
+<https://w3id.org/network-data-catalog/platform#platform> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/platform#Platform> .
+<https://w3id.org/network-data-catalog/platform#platform> <http://www.w3.org/2000/01/rdf-schema#label> "platform" .
+# 
+# https://w3id.org/network-data-catalog/platform#vendor
+<https://w3id.org/network-data-catalog/platform#vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/network-data-catalog/platform#vendor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/network-data-catalog/platform#Vendor> .
+<https://w3id.org/network-data-catalog/platform#vendor> <http://www.w3.org/2000/01/rdf-schema#label> "vendor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://w3id.org/network-data-catalog/platform#osName
+<https://w3id.org/network-data-catalog/platform#osName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/platform#osName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/platform#OperatingSystem> .
+<https://w3id.org/network-data-catalog/platform#osName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/platform#osName> <http://www.w3.org/2000/01/rdf-schema#label> "os name" .
+# 
+# https://w3id.org/network-data-catalog/platform#osVersion
+<https://w3id.org/network-data-catalog/platform#osVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/platform#osVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/platform#OperatingSystem> .
+<https://w3id.org/network-data-catalog/platform#osVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/platform#osVersion> <http://www.w3.org/2000/01/rdf-schema#label> "os version" .
+# 
+# https://w3id.org/network-data-catalog/platform#platformName
+<https://w3id.org/network-data-catalog/platform#platformName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/network-data-catalog/platform#platformName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/network-data-catalog/platform#Platform> .
+<https://w3id.org/network-data-catalog/platform#platformName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/network-data-catalog/platform#platformName> <http://www.w3.org/2000/01/rdf-schema#label> "platform name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# https://w3id.org/network-data-catalog/platform#OperatingSystem
+<https://w3id.org/network-data-catalog/platform#OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/platform#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Operating System" .
+# 
+# https://w3id.org/network-data-catalog/platform#Platform
+<https://w3id.org/network-data-catalog/platform#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/platform#Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform" .
+# 
+# https://w3id.org/network-data-catalog/platform#Vendor
+<https://w3id.org/network-data-catalog/platform#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/platform#Vendor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Organization> .
+<https://w3id.org/network-data-catalog/platform#Vendor> <http://www.w3.org/2000/01/rdf-schema#label> "Vendor" .
+# 
+# https://w3id.org/network-data-catalog/server#NetworkDevice
+<https://w3id.org/network-data-catalog/server#NetworkDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/network-data-catalog/server#NetworkDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Network Device" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

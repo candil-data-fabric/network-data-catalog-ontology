@@ -1,0 +1,251 @@
+@prefix core: <https://ontology.unifiedcyberontology.org/uco/core/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ndc-sr: <https://w3id.org/network-data-catalog/server#> .
+@prefix observable: <https://ontology.unifiedcyberontology.org/uco/observable/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://www.owl-ontologies.com/schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+rdfs:seeAlso a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+foaf:accountName a owl:DatatypeProperty ;
+    rdfs:label "account name" ;
+    rdfs:domain foaf:OnlineAccount ;
+    rdfs:range xsd:string .
+
+core:hasFacet a owl:ObjectProperty ;
+    rdfs:label "has facet" .
+
+observable:addressValue a owl:DatatypeProperty ;
+    rdfs:label "address value" ;
+    rdfs:range xsd:string .
+
+observable:password a owl:DatatypeProperty ;
+    rdfs:label "password" ;
+    rdfs:domain observable:AccountAuthenticationFacet ;
+    rdfs:range xsd:string .
+
+observable:passwordType a owl:DatatypeProperty ;
+    rdfs:label "password type" ;
+    rdfs:domain observable:AccountAuthenticationFacet ;
+    rdfs:range xsd:string .
+
+observable:userName a owl:DatatypeProperty ;
+    rdfs:label "user name" ;
+    rdfs:range xsd:string .
+
+ndc-sr:CandidateCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:CandidateDatastore a owl:Class ;
+    rdfs:label "Candidate Datastore" ;
+    rdfs:subClassOf ndc-sr:ConventionalDatastore .
+
+ndc-sr:ConfirmedCommitCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:DynamicDatastore a owl:Class ;
+    rdfs:label "Dynamic Datastore" ;
+    rdfs:subClassOf ndc-sr:YangDatastore .
+
+ndc-sr:IntendedDatastore a owl:Class ;
+    rdfs:label "Intended Datastore" ;
+    rdfs:subClassOf ndc-sr:ConventionalDatastore .
+
+ndc-sr:JsonGnmiEncoding a owl:NamedIndividual,
+        ndc-sr:GnmiEncoding .
+
+ndc-sr:JsonIetfGnmiEncoding a owl:NamedIndividual,
+        ndc-sr:GnmiEncoding .
+
+ndc-sr:OperationalDatastore a owl:Class ;
+    rdfs:label "Operational Datastore" ;
+    rdfs:subClassOf ndc-sr:YangDatastore .
+
+ndc-sr:ProtobufGnmiEncoding a owl:NamedIndividual,
+        ndc-sr:GnmiEncoding .
+
+ndc-sr:RollbackOnErrorCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:RunningDatastore a owl:Class ;
+    rdfs:label "Running Datastore" ;
+    rdfs:subClassOf ndc-sr:ConventionalDatastore .
+
+ndc-sr:StartupCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:StartupDatastore a owl:Class ;
+    rdfs:label "Startup Datastore" ;
+    rdfs:subClassOf ndc-sr:ConventionalDatastore .
+
+ndc-sr:UrlCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:ValidateCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:WritableRunningCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:XpathCapability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:YangLibrary10Capability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:YangLibrary11Capability a owl:NamedIndividual,
+        ndc-sr:NetconfCapability .
+
+ndc-sr:deviceId a owl:DatatypeProperty ;
+    rdfs:label "device id" ;
+    rdfs:domain ndc-sr:NetworkDevice ;
+    rdfs:range xsd:string .
+
+ndc-sr:exposedByYangServer a owl:ObjectProperty ;
+    rdfs:label "exposed by yang server" ;
+    rdfs:domain ndc-sr:YangDatastore ;
+    rdfs:range ndc-sr:YangServer .
+
+ndc-sr:implementsYangDatastore a owl:ObjectProperty ;
+    rdfs:label "implements yang datastore" ;
+    rdfs:domain ndc-sr:NetworkDevice ;
+    rdfs:range ndc-sr:YangDatastore .
+
+ndc-sr:netconfCapability a owl:ObjectProperty ;
+    rdfs:label "netconf capability" ;
+    rdfs:domain ndc-sr:NetconfServer ;
+    rdfs:range ndc-sr:NetconfCapability .
+
+ndc-sr:netconfCapabilityId a owl:DatatypeProperty ;
+    rdfs:label "netconf capability id" ;
+    rdfs:domain ndc-sr:NetconfCapability ;
+    rdfs:range xsd:anyURI .
+
+ndc-sr:netconfCapabilityName a owl:DatatypeProperty ;
+    rdfs:label "netconf capability name" ;
+    rdfs:domain ndc-sr:NetconfCapability ;
+    rdfs:range xsd:string .
+
+ndc-sr:netconfCapabilityVersion a owl:DatatypeProperty ;
+    rdfs:label "netconf capability version" ;
+    rdfs:domain ndc-sr:NetconfCapability ;
+    rdfs:range xsd:string .
+
+ndc-sr:protocolVersion a owl:DatatypeProperty ;
+    rdfs:label "protocol version" ;
+    rdfs:domain ndc-sr:YangServer ;
+    rdfs:range xsd:string .
+
+ndc-sr:runsYangServer a owl:ObjectProperty ;
+    rdfs:label "runs yang server" ;
+    rdfs:domain ndc-sr:NetworkDevice ;
+    rdfs:range ndc-sr:YangServer .
+
+ndc-sr:serverAccount a owl:ObjectProperty ;
+    rdfs:label "server account" ;
+    rdfs:domain ndc-sr:YangServer ;
+    rdfs:range ndc-sr:ServerAccount .
+
+ndc-sr:socketAddress a owl:ObjectProperty ;
+    rdfs:label "socket address" ;
+    rdfs:domain ndc-sr:YangServer ;
+    rdfs:range observable:SocketAddress .
+
+ndc-sr:supportsGnmiEncoding a owl:ObjectProperty ;
+    rdfs:label "supports gnmi encoding" ;
+    rdfs:domain ndc-sr:GnmiServer ;
+    rdfs:range ndc-sr:GnmiEncoding .
+
+ndc-sr:username a owl:DatatypeProperty ;
+    rdfs:label "username" ;
+    rdfs:domain ndc-sr:ServerAccount ;
+    rdfs:range xsd:string .
+
+observable:SocketAddress a owl:Class ;
+    rdfs:label "Socket Address" .
+
+observable:UserAccount a owl:Class ;
+    rdfs:label "User Account" .
+
+ndc-sr: a owl:Ontology ;
+    dcterms:created "2025-05-17"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
+    dcterms:description "An ontology for representing YANG servers" ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Network Data Catalog Ontology – Server" ;
+    vann:preferredNamespacePrefix "ndc-sr" ;
+    vann:preferredNamespaceUri ndc-sr: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
+    rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
+    owl:priorVersion <https://w3id.org/network-data-catalog/server> ;
+    owl:versionIRI <https://w3id.org/network-data-catalog/server> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ndc-sr:GnmiServer a owl:Class ;
+    rdfs:label "Gnmi Server" ;
+    rdfs:subClassOf ndc-sr:YangServer .
+
+ndc-sr:NetconfServer a owl:Class ;
+    rdfs:label "Netconf Server" ;
+    rdfs:subClassOf ndc-sr:YangServer .
+
+foaf:OnlineAccount a owl:Class ;
+    rdfs:label "Online Account" .
+
+observable:AccountAuthenticationFacet a owl:Class ;
+    rdfs:label "Account Authentication Facet" .
+
+ndc-sr:ServerAccount a owl:Class ;
+    rdfs:label "Server Account" ;
+    rdfs:subClassOf foaf:OnlineAccount,
+        observable:UserAccount .
+
+ndc-sr:NetworkDevice a owl:Class ;
+    rdfs:label "Network Device" .
+
+ndc-sr:ConventionalDatastore a owl:Class ;
+    rdfs:label "Conventional Datastore" ;
+    rdfs:subClassOf ndc-sr:YangDatastore .
+
+ndc-sr:GnmiEncoding a owl:Class ;
+    rdfs:label "Gnmi Encoding" .
+
+ndc-sr:YangDatastore a owl:Class ;
+    rdfs:label "Yang Datastore" .
+
+ndc-sr:YangServer a owl:Class ;
+    rdfs:label "Yang Server" .
+
+ndc-sr:NetconfCapability a owl:Class ;
+    rdfs:label "Netconf Capability" .

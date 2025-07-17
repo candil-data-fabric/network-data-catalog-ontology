@@ -24,7 +24,7 @@ The requirements of this ontology are written as competency questions/natural la
 
 The following diagrams shows the classes and properties defined in the ontology. The diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
 
-![Network Data Catalog Ontology Diagram](diagrams/network-data-catalog-ontology-Complete.png)
+![Network Data Catalog Ontology Diagram](diagrams/overview/overview.svg)
 
 ### Ontology Code (OWL)
 

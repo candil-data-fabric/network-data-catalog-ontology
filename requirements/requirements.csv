@@ -1,4 +1,4 @@
-Id,Subdomain,Competency Question/Fact
+Id,Domain,Competency Question/Fact
 F1,Library,A YANG library collection of the YANG modules and submodules used by a YANG server
 F2,Library,"A submodule provides a partial module definition except for the namespace, which is defined by the module that the submodule belongs to"
 F3,Library,YANG library is implemented by the operational datastore
@@ -12,15 +12,7 @@ F10,Server,A YANG server stores operational state data in the operational state 
 F11,Server,NETCONF server is a type of YANG server
 F12,Server,A NETCONF server implements NETCONF capabilities
 F13,Server,A NETCONF capability is uniquely identified by a URN
-F14,Server,Host key verification can be enabled or disabled to access a NETCONF server
-F15,Server,A query to a YANG server must specify a YANG datastore and a filter
-F16,Server,Xpath is a type of filter
-F17,Server,XML subtree is a type of filter
-F18,Server,A dynamic subscription to a YANG server must specify datastore and filter
-F19,Server,Periodic is a type of subscription
-F20,Server,A periodic subscription has period interval measured in centiseconds
-F21,Server,On-change is a type of subscription
-F22,Library,"A YANG module has a description, contact, and reference to an IETF document"
+F14,Library,"A YANG module has a description, contact, and reference to an IETF document"
 CQ1,Library,What is the identifier of a YANG Library?
 CQ2,Library,"Which are the module sets included by a YANG library?"
 CQ3,Library,Which are the schemas included by a YANG library?
@@ -47,4 +39,4 @@ CQ23,Platform,Which is the vendor that manufactors an operating system?
 CQ24,Server,What is the protocol version of the Yang Server?
 CQ25,Library,What is the location where the YANG module is available?
 CQ26,Library,What is the prefix of the YANG module?
-,,
+CQ27,Library,Which organization has developed the YANG module?

@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix core: <https://ontology.unifiedcyberontology.org/uco/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix observable: <https://ontology.unifiedcyberontology.org/uco/observable/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ndc-lb: <https://w3id.org/network-data-catalog/library#> .
+@prefix ndc-pm: <https://w3id.org/network-data-catalog/platform#> .
+@prefix ndc-sr: <https://w3id.org/network-data-catalog/server#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://example.org> .
+
+<NetworkDevice/srl> a ndc-sr:NetworkDevice;
+  ndc-sr:deviceId "srl";
+  ndc-sr:runsYangServer <NetworkDevice/srl/NetconfServer>, <NetworkDevice/srl/GnmiServer> ;
+  ndc-sr:implementsYangDatastore <NetworkDevice/srl/Datastore/intended> ,
+                                 <NetworkDevice/srl/Datastore/candidate> ,
+                                 <NetworkDevice/srl/Datastore/startup> ,
+                                 <NetworkDevice/srl/Datastore/running> ,
+                                 <NetworkDevice/srl/Datastore/operational> .
+
+<NetworkDevice/srl/NetconfServer> a ndc-sr:NetconfServer;
+  ndc-sr:socketAddress <NetworkDevice/srl/NetconfServer/SocketAddress>;
+  ndc-sr:serverAccount <NetworkDevice/srl/NetconfServer/ServerAccount> .
+
+<NetworkDevice/srl/NetconfServer/SocketAddress> a observable:SocketAddress;
+  observable:addressValue "172.100.100.11:830" .
+
+<NetworkDevice/srl/NetconfServer/ServerAccount> a ndc-sr:ServerAccount;
+  ndc-sr:username "admin";
+  core:hasFacet <NetworkDevice/srl/NetconfServer/AccountAuthenticationFacet> .
+
+<NetworkDevice/srl/NetconfServer/AccountAuthenticationFacet> a
+    observable:AccountAuthenticationFacet;
+  observable:password "NokiaSrl1!";
+  observable:passwordType "plain-text" .
+
+<NetworkDevice/srl/GnmiServer> a ndc-sr:GnmiServer;
+  ndc-sr:socketAddress <NetworkDevice/srl/GnmiServer/SocketAddress>;
+  ndc-sr:serverAccount <NetworkDevice/srl/GnmiServer/ServerAccount> .
+
+<NetworkDevice/srl/GnmiServer/SocketAddress> a observable:SocketAddress;
+  observable:addressValue "172.100.100.11:57400" .
+
+<NetworkDevice/srl/GnmiServer/ServerAccount> a ndc-sr:ServerAccount;
+  ndc-sr:username "admin";
+  core:hasFacet <NetworkDevice/srl/GnmiServer/AccountAuthenticationFacet> .
+
+<NetworkDevice/srl/GnmiServer/AccountAuthenticationFacet> a observable:AccountAuthenticationFacet;
+  observable:password "NokiaSrl1!";
+  observable:passwordType "plain-text" .
+
+<NetworkDevice/srl/Datastore/intended> a ndc-sr:IntendedDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/startup> a ndc-sr:StartupDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/running> a ndc-sr:RunningDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/operational> a ndc-sr:OperationalDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .
+
+<NetworkDevice/srl/Datastore/candidate> a ndc-sr:CandidateDatastore;
+  ndc-sr:exposedByYangServer <http://example.org/NetworkDevice/srl/NetconfServer>, <http://example.org/NetworkDevice/srl/GnmiServer>;
+  ndc-lb:supportsDatastoreSchema <http://example.org/NetworkDevice/srl/Schema/nokia> .

@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/network-data-catalog/server#"
+     xml:base="https://w3id.org/network-data-catalog/server"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://www.owl-ontologies.com/schema#">
+    <owl:Ontology rdf:about="https://w3id.org/network-data-catalog/server#">
+        <owl:versionIRI rdf:resource="https://w3id.org/network-data-catalog/server"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-17</terms:created>
+        <terms:creator>Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)</terms:creator>
+        <terms:description>An ontology for representing YANG servers</terms:description>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/APACHE2.0"/>
+        <terms:publisher rdf:resource="https://github.com/candil-data-fabric"/>
+        <terms:title>The Network Data Catalog Ontology – Server</terms:title>
+        <vann:preferredNamespacePrefix>ndc-sr</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/network-data-catalog/server#"/>
+        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/candil-data-fabric/network-data-catalog-ontology</schema:codeRepository>
+        <rdfs:seeAlso rdf:resource="https://datatracker.ietf.org/doc/rfc8525/"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/network-data-catalog/server"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/schema#codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/schema#codeRepository"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/core/hasFacet -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.unifiedcyberontology.org/uco/core/hasFacet">
+        <rdfs:label>has facet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#exposedByYangServer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#exposedByYangServer">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#YangDatastore"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:label>exposed by yang server</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#implementsYangDatastore -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#implementsYangDatastore">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetworkDevice"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#YangDatastore"/>
+        <rdfs:label>implements yang datastore</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#netconfCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#netconfCapability">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetconfServer"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+        <rdfs:label>netconf capability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#runsYangServer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#runsYangServer">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetworkDevice"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:label>runs yang server</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#serverAccount -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#serverAccount">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#ServerAccount"/>
+        <rdfs:label>server account</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#socketAddress -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#socketAddress">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:range rdf:resource="https://ontology.unifiedcyberontology.org/uco/observable/SocketAddress"/>
+        <rdfs:label>socket address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#supportsGnmiEncoding -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/network-data-catalog/server#supportsGnmiEncoding">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#GnmiServer"/>
+        <rdfs:range rdf:resource="https://w3id.org/network-data-catalog/server#GnmiEncoding"/>
+        <rdfs:label>supports gnmi encoding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/accountName">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>account name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/addressValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/addressValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>address value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/password -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/password">
+        <rdfs:domain rdf:resource="https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>password</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/passwordType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/passwordType">
+        <rdfs:domain rdf:resource="https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>password type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/userName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/userName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>user name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#deviceId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#deviceId">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetworkDevice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>device id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#netconfCapabilityId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#netconfCapabilityId">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>netconf capability id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#netconfCapabilityName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#netconfCapabilityName">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>netconf capability name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#netconfCapabilityVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#netconfCapabilityVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>netconf capability version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#protocolVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#protocolVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>protocol version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#username -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/network-data-catalog/server#username">
+        <rdfs:domain rdf:resource="https://w3id.org/network-data-catalog/server#ServerAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>username</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+        <rdfs:label>Online Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet -->
+
+
+    <owl:Class rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/AccountAuthenticationFacet">
+        <rdfs:label>Account Authentication Facet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/SocketAddress -->
+
+
+    <owl:Class rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/SocketAddress">
+        <rdfs:label>Socket Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.unifiedcyberontology.org/uco/observable/UserAccount -->
+
+
+    <owl:Class rdf:about="https://ontology.unifiedcyberontology.org/uco/observable/UserAccount">
+        <rdfs:label>User Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#CandidateDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#CandidateDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#ConventionalDatastore"/>
+        <rdfs:label>Candidate Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#ConventionalDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#ConventionalDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#YangDatastore"/>
+        <rdfs:label>Conventional Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#DynamicDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#DynamicDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#YangDatastore"/>
+        <rdfs:label>Dynamic Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#GnmiEncoding -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#GnmiEncoding">
+        <rdfs:label>Gnmi Encoding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#GnmiServer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#GnmiServer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:label>Gnmi Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#IntendedDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#IntendedDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#ConventionalDatastore"/>
+        <rdfs:label>Intended Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#NetconfCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#NetconfCapability">
+        <rdfs:label>Netconf Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#NetconfServer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#NetconfServer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#YangServer"/>
+        <rdfs:label>Netconf Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#NetworkDevice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#NetworkDevice">
+        <rdfs:label>Network Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#OperationalDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#OperationalDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#YangDatastore"/>
+        <rdfs:label>Operational Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#RunningDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#RunningDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#ConventionalDatastore"/>
+        <rdfs:label>Running Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#ServerAccount -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#ServerAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.unifiedcyberontology.org/uco/observable/UserAccount"/>
+        <rdfs:label>Server Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#StartupDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#StartupDatastore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/network-data-catalog/server#ConventionalDatastore"/>
+        <rdfs:label>Startup Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#YangDatastore -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#YangDatastore">
+        <rdfs:label>Yang Datastore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#YangServer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/network-data-catalog/server#YangServer">
+        <rdfs:label>Yang Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#CandidateCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#CandidateCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#ConfirmedCommitCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#ConfirmedCommitCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#JsonGnmiEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#JsonGnmiEncoding">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#GnmiEncoding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#JsonIetfGnmiEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#JsonIetfGnmiEncoding">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#GnmiEncoding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#ProtobufGnmiEncoding -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#ProtobufGnmiEncoding">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#GnmiEncoding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#RollbackOnErrorCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#RollbackOnErrorCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#StartupCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#StartupCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#UrlCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#UrlCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#ValidateCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#ValidateCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#WritableRunningCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#WritableRunningCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#XpathCapability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#XpathCapability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#YangLibrary10Capability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#YangLibrary10Capability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/network-data-catalog/server#YangLibrary11Capability -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/network-data-catalog/server#YangLibrary11Capability">
+        <rdf:type rdf:resource="https://w3id.org/network-data-catalog/server#NetconfCapability"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

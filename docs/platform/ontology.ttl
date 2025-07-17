@@ -1,0 +1,178 @@
+@prefix : <https://w3id.org/network-data-catalog/platform#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/network-data-catalog/platform#> .
+
+<https://w3id.org/network-data-catalog/platform#> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <https://w3id.org/network-data-catalog/platform> ;
+                                                   <http://purl.org/dc/terms/created> "2025-05-05"^^xsd:date ;
+                                                   <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva (https://orcid.org/0000-0002-8573-127X)" ;
+                                                   <http://purl.org/dc/terms/description> "An ontology for representing platform information of network devices" ;
+                                                   <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                                   <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                                   <http://purl.org/dc/terms/title> "The Network Data Catalog Ontology – Platform" ;
+                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "ndc-pm" ;
+                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/network-data-catalog/platform#> ;
+                                                   <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/network-data-catalog-ontology"^^xsd:anyURI ;
+                                                   rdfs:seeAlso <https://datatracker.ietf.org/doc/rfc8525/> ;
+                                                   owl:priorVersion <https://w3id.org/network-data-catalog/platform> ;
+                                                   owl:versionInfo "1.0.0" ;
+                                                   <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/network-data-catalog/platform#operatingSystem
+:operatingSystem rdf:type owl:ObjectProperty ;
+                 rdfs:domain <https://w3id.org/network-data-catalog/server#NetworkDevice> ;
+                 rdfs:range :OperatingSystem ;
+                 rdfs:label "operating system" .
+
+
+###  https://w3id.org/network-data-catalog/platform#platform
+:platform rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://w3id.org/network-data-catalog/server#NetworkDevice> ;
+          rdfs:range :Platform ;
+          rdfs:label "platform" .
+
+
+###  https://w3id.org/network-data-catalog/platform#vendor
+:vendor rdf:type owl:ObjectProperty ;
+        rdfs:range :Vendor ;
+        rdfs:label "vendor" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "name" .
+
+
+###  https://w3id.org/network-data-catalog/platform#osName
+:osName rdf:type owl:DatatypeProperty ;
+        rdfs:domain :OperatingSystem ;
+        rdfs:range xsd:string ;
+        rdfs:label "os name" .
+
+
+###  https://w3id.org/network-data-catalog/platform#osVersion
+:osVersion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :OperatingSystem ;
+           rdfs:range xsd:string ;
+           rdfs:label "os version" .
+
+
+###  https://w3id.org/network-data-catalog/platform#platformName
+:platformName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Platform ;
+              rdfs:range xsd:string ;
+              rdfs:label "platform name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class ;
+                                 rdfs:label "Organization" .
+
+
+###  https://w3id.org/network-data-catalog/platform#OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:label "Operating System" .
+
+
+###  https://w3id.org/network-data-catalog/platform#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:label "Platform" .
+
+
+###  https://w3id.org/network-data-catalog/platform#Vendor
+:Vendor rdf:type owl:Class ;
+        rdfs:subClassOf <http://schema.org/Organization> ;
+        rdfs:label "Vendor" .
+
+
+###  https://w3id.org/network-data-catalog/server#NetworkDevice
+<https://w3id.org/network-data-catalog/server#NetworkDevice> rdf:type owl:Class ;
+                                                             rdfs:label "Network Device" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
